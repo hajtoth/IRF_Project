@@ -1,0 +1,5 @@
+Programozási minta 
+
+Az egyke programozási mintát szeretném használni a projektemben az XML feldolgozásához.
+Vagyis ebben az osztályban tárolnék egy listát, amit egy formban és egy usercontorolban használnék fel egy interfészen keresztül.
+Azért használtam az egyke programozási mintát, mert így az XML fájlt elég egyszer betöltenem és utána tudom ezt több felületen is használni.
