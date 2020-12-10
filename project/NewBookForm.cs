@@ -95,9 +95,7 @@ namespace project
 
         private void textBox4_Validating(object sender, CancelEventArgs e)
         {
-            Regex regex = new Regex("^\\d+(\\,\\d+)?$");
-
-            if (regex.IsMatch(textBox4.Text))
+            if (BookPropertyValidator.ValidatePrice(textBox4.Text))
             {
                 e.Cancel = false;
 
