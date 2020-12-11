@@ -57,7 +57,7 @@
             this.authorTextBox.Name = "authorTextBox";
             this.authorTextBox.Size = new System.Drawing.Size(247, 26);
             this.authorTextBox.TabIndex = 0;
-            this.authorTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
+            this.authorTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.author_Validating);
             // 
             // titleTextBox
             // 
@@ -66,7 +66,7 @@
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(247, 26);
             this.titleTextBox.TabIndex = 1;
-            this.titleTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.textBox2_Validating);
+            this.titleTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.title_Validating);
             // 
             // genreTextBox
             // 
@@ -75,7 +75,7 @@
             this.genreTextBox.Name = "genreTextBox";
             this.genreTextBox.Size = new System.Drawing.Size(247, 26);
             this.genreTextBox.TabIndex = 2;
-            this.genreTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.textBox3_Validating);
+            this.genreTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.genre_Validating);
             // 
             // priceTextBox
             // 
@@ -84,7 +84,7 @@
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(247, 26);
             this.priceTextBox.TabIndex = 3;
-            this.priceTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.textBox4_Validating);
+            this.priceTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.price_Validating);
             // 
             // descriptionTextBox
             // 

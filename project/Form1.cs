@@ -65,12 +65,12 @@ namespace project
             {
                 Book book = new Book();
 
-                book.author = nbf.authorTextBox.Text;
-                book.title = nbf.titleTextBox.Text;
-                book.genre = nbf.genreTextBox.Text;
-                book.price = double.Parse(nbf.priceTextBox.Text);
-                book.publish_date = DateTime.Parse(nbf.publishdateTextBox.Text);
-                book.description = nbf.descriptionTextBox.Text;
+                book.Author = nbf.authorTextBox.Text;
+                book.Title = nbf.titleTextBox.Text;
+                book.Genre = nbf.genreTextBox.Text;
+                book.Price = double.Parse(nbf.priceTextBox.Text);
+                book.PublishDate = DateTime.Parse(nbf.publishdateTextBox.Text);
+                book.Description = nbf.descriptionTextBox.Text;
 
                 bindingSource1.Add(book);
 
@@ -88,23 +88,23 @@ namespace project
                 int saleCode = rng.Next(0, 10);
                 if (saleCode == 6)
                 {
-                    book.price *= 0.9;
+                    book.Price *= 0.9;
                 }
                 else if (saleCode == 7)
                 {
-                    book.price *= 0.8;
+                    book.Price *= 0.8;
                 }
                 else if (saleCode == 8)
                 {
-                    book.price *= 0.7;
+                    book.Price *= 0.7;
                 }
                 else if (saleCode == 9)
                 {
-                    book.price *= 0.6;
+                    book.Price *= 0.6;
                 }
                 else if (saleCode == 5)
                 {
-                    book.price *= 0.5;
+                    book.Price *= 0.5;
                 }
 
             }
@@ -123,33 +123,14 @@ namespace project
 
             if (sfd.ShowDialog() != DialogResult.OK) return;
 
-            List<Book> books = bindingSource1.DataSource as List<Book>;
-
-            using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8))
-            {
-                // Végigmegyünk a hallgató lista elemein
-                foreach (var s in books)
-                {
-                    // Egy ciklus iterációban egy sor tartalmát írjuk a fájlba
-                    // A StreamWriter Write metódusa a WriteLine-al szemben nem nyit új sort
-                    // Így darabokból építhetjük fel a csv fájl pontosvesszővel elválasztott sorait
-                    sw.Write(s.author);
-                    sw.Write(";");
-                    sw.Write(s.title);
-                    sw.Write(";");
-                    sw.Write(s.genre);
-                    sw.Write(";");
-                    sw.Write(s.price.ToString());
-                    sw.Write(";");
-                    sw.Write(s.publish_date.ToString());
-                    sw.Write(s.description);
-                    sw.Write(";");
-                    sw.WriteLine();
-                }
+            Export.ExportToCsv(sfd.FileName, bindingSource1.DataSource as List<Book>);
 
 
-            }
+
         }
-
     }
+
 }
+
+
+

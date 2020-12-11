@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NuGet.Common;
 using NUnit.Framework;
 using project;
 
-namespace CatalogTest {
+namespace CatalogTest
+{
     [TestFixture]
     public class ValidateTest
     {
@@ -16,7 +19,8 @@ namespace CatalogTest {
         [TestCase("one point two", false)]
         [TestCase("1.2.2.3", false)]
         [TestCase("1,2,2,3", false)]
-        public void PriceValidateTest(string price, bool expectedResult) {
+        public void PriceValidateTest(string price, bool expectedResult)
+        {
             bool result = BookPropertyValidator.ValidatePrice(price);
             Assert.AreEqual(result, expectedResult);
         }
@@ -33,6 +37,8 @@ namespace CatalogTest {
             bool result = BookPropertyValidator.ValidateDate(publish_date);
             Assert.AreEqual(result, expectedResult);
         }
+
+
     }
 
 

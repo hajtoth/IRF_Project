@@ -26,7 +26,7 @@ namespace project
             label12.Visible = false; 
         }
 
-        private void textBox1_Validating(object sender, CancelEventArgs e)
+        private void author_Validating(object sender, CancelEventArgs e)
         {
             Regex regex = new Regex(@"^(?!\s*$).+");
 
@@ -47,7 +47,7 @@ namespace project
 
             }
         }
-        private void textBox2_Validating(object sender, CancelEventArgs e)
+        private void title_Validating(object sender, CancelEventArgs e)
         {
             Regex regex = new Regex(@"^(?!\s*$).+");
 
@@ -64,12 +64,12 @@ namespace project
                 e.Cancel = true;
                 titleTextBox.BackColor = Color.MediumVioletRed;
                 MessageBox.Show("Invalid title.\nSample: Midnight Rain");
-                label7.Visible = true;
+                label8.Visible = true;
 
             }
         }
 
-        private void textBox3_Validating(object sender, CancelEventArgs e)
+        private void genre_Validating(object sender, CancelEventArgs e)
         {
             Regex regex = new Regex(@"^(?!\s*$).+");
 
@@ -86,14 +86,14 @@ namespace project
                 e.Cancel = true;
                 genreTextBox.BackColor = Color.MediumVioletRed;
                 MessageBox.Show("Invalid genre.\nSample: Fantasy");
-                label7.Visible = true;
+                label9.Visible = true;
 
             }
         }
 
 
 
-        private void textBox4_Validating(object sender, CancelEventArgs e)
+        private void price_Validating(object sender, CancelEventArgs e)
         {
             if (BookPropertyValidator.ValidatePrice(priceTextBox.Text))
             {
@@ -108,7 +108,7 @@ namespace project
                 e.Cancel = true;
                 priceTextBox.BackColor = Color.MediumVioletRed;
                 MessageBox.Show("Invalid price.\nSample: 59,95");
-                label7.Visible = true;
+                label10.Visible = true;
 
             }
         }
@@ -129,7 +129,7 @@ namespace project
                 e.Cancel = true;
                 publishdateTextBox.BackColor = Color.MediumVioletRed;
                 MessageBox.Show("Invalid publish date.\nSample: 2000. 12. 16.");
-                label7.Visible = true;
+                label11.Visible = true;
 
             }
         }
@@ -150,7 +150,7 @@ namespace project
         //            e.Cancel = true;
         //            textBox6.BackColor = Color.MediumVioletRed;
         //            MessageBox.Show("Invalid description.\nSample: ....");
-        //            label7.Visible = true;
+        //            label12.Visible = true;
 
         //        }
         //    }

@@ -18,7 +18,6 @@ namespace project
 
         public static bool ValidateDate(string publish_date)
         {
-
             Regex regex = new Regex("([0-9]{4})[^0-9]*([0-9]+)[^0-9]*([0-9]+)");
             return regex.IsMatch(publish_date);
 

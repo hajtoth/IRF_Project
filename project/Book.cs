@@ -11,20 +11,20 @@ namespace project
     public class Book
     {
         [XmlAttribute("id")]
-        public string bookId { get; set; }
+        public string BookId { get; set; }
         [XmlElement(ElementName ="author")]
-        public string author { get; set; }
+        public string Author { get; set; }
 
         [XmlElement(ElementName = "title")]
-        public string title { get; set; }
+        public string Title { get; set; }
         [XmlElement(ElementName = "genre")]
-        public string genre { get; set; }
+        public string Genre { get; set; }
         [XmlElement(ElementName = "price")]
-        public double price { get; set; }
+        public double Price { get; set; }
         [XmlElement(ElementName = "publish_date")]
-        public DateTime publish_date { get; set; }
+        public DateTime PublishDate { get; set; }
         [XmlElement(ElementName = "description")]
-        public string description { get; set; }
+        public string Description { get; set; }
 
     }
 }
