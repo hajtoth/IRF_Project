@@ -30,18 +30,18 @@ namespace project
         {
             Regex regex = new Regex(@"^(?!\s*$).+");
 
-            if (regex.IsMatch(textBox1.Text))
+            if (regex.IsMatch(authorTextBox.Text))
             {
                 e.Cancel = false;
 
-                if (!String.IsNullOrWhiteSpace(textBox1.Text))
-                    textBox1.BackColor = Color.LightGreen;
+                if (!String.IsNullOrWhiteSpace(authorTextBox.Text))
+                    authorTextBox.BackColor = Color.LightGreen;
             }
 
             else
             {
                 e.Cancel = true;
-                textBox1.BackColor = Color.MediumVioletRed;
+                authorTextBox.BackColor = Color.MediumVioletRed;
                 MessageBox.Show("Invalid author.\nSample: Surname, Forename\nRalls, Kim");
                 label7.Visible = true;
 
@@ -51,18 +51,18 @@ namespace project
         {
             Regex regex = new Regex(@"^(?!\s*$).+");
 
-            if (regex.IsMatch(textBox2.Text))
+            if (regex.IsMatch(titleTextBox.Text))
             {
                 e.Cancel = false;
 
-                if (!String.IsNullOrWhiteSpace(textBox2.Text))
-                    textBox2.BackColor = Color.LightGreen;
+                if (!String.IsNullOrWhiteSpace(titleTextBox.Text))
+                    titleTextBox.BackColor = Color.LightGreen;
             }
 
             else
             {
                 e.Cancel = true;
-                textBox2.BackColor = Color.MediumVioletRed;
+                titleTextBox.BackColor = Color.MediumVioletRed;
                 MessageBox.Show("Invalid title.\nSample: Midnight Rain");
                 label7.Visible = true;
 
@@ -73,18 +73,18 @@ namespace project
         {
             Regex regex = new Regex(@"^(?!\s*$).+");
 
-            if (regex.IsMatch(textBox3.Text))
+            if (regex.IsMatch(genreTextBox.Text))
             {
                 e.Cancel = false;
 
-                if (!String.IsNullOrWhiteSpace(textBox3.Text))
-                    textBox3.BackColor = Color.LightGreen;
+                if (!String.IsNullOrWhiteSpace(genreTextBox.Text))
+                    genreTextBox.BackColor = Color.LightGreen;
             }
 
             else
             {
                 e.Cancel = true;
-                textBox3.BackColor = Color.MediumVioletRed;
+                genreTextBox.BackColor = Color.MediumVioletRed;
                 MessageBox.Show("Invalid genre.\nSample: Fantasy");
                 label7.Visible = true;
 
@@ -95,40 +95,39 @@ namespace project
 
         private void textBox4_Validating(object sender, CancelEventArgs e)
         {
-            if (BookPropertyValidator.ValidatePrice(textBox4.Text))
+            if (BookPropertyValidator.ValidatePrice(priceTextBox.Text))
             {
                 e.Cancel = false;
 
-                if (!String.IsNullOrWhiteSpace(textBox4.Text))
-                    textBox4.BackColor = Color.LightGreen;
+                if (!String.IsNullOrWhiteSpace(priceTextBox.Text))
+                    priceTextBox.BackColor = Color.LightGreen;
             }
 
             else
             {
                 e.Cancel = true;
-                textBox4.BackColor = Color.MediumVioletRed;
+                priceTextBox.BackColor = Color.MediumVioletRed;
                 MessageBox.Show("Invalid price.\nSample: 59,95");
                 label7.Visible = true;
 
             }
         }
 
-        private void textBox5_Validating(object sender, CancelEventArgs e)
+        private void publishdate_Validating(object sender, CancelEventArgs e)
         {
-            Regex regex = new Regex("^[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?$");
 
-            if (regex.IsMatch(textBox5.Text))
+            if (BookPropertyValidator.ValidateDate(publishdateTextBox.Text))
             {
                 e.Cancel = false;
 
-                if (!String.IsNullOrWhiteSpace(textBox5.Text))
-                    textBox5.BackColor = Color.LightGreen;
+                if (!String.IsNullOrWhiteSpace(publishdateTextBox.Text))
+                    publishdateTextBox.BackColor = Color.LightGreen;
             }
 
             else
             {
                 e.Cancel = true;
-                textBox5.BackColor = Color.MediumVioletRed;
+                publishdateTextBox.BackColor = Color.MediumVioletRed;
                 MessageBox.Show("Invalid publish date.\nSample: 2000. 12. 16.");
                 label7.Visible = true;
 

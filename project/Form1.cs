@@ -65,12 +65,12 @@ namespace project
             {
                 Book book = new Book();
 
-                book.author = nbf.textBox1.Text;
-                book.title = nbf.textBox2.Text;
-                book.genre = nbf.textBox3.Text;
-                book.price = double.Parse(nbf.textBox4.Text);
-                book.publish_date = DateTime.Parse(nbf.textBox6.Text);
-                book.description = nbf.textBox5.Text;
+                book.author = nbf.authorTextBox.Text;
+                book.title = nbf.titleTextBox.Text;
+                book.genre = nbf.genreTextBox.Text;
+                book.price = double.Parse(nbf.priceTextBox.Text);
+                book.publish_date = DateTime.Parse(nbf.publishdateTextBox.Text);
+                book.description = nbf.descriptionTextBox.Text;
 
                 bindingSource1.Add(book);
 

@@ -15,5 +15,15 @@ namespace project
             Regex regex = new Regex("^\\d+(\\,\\d+)?$");
             return regex.IsMatch(price);
         }
+
+        public static bool ValidateDate(string publish_date)
+        {
+
+            Regex regex = new Regex("([0-9]{4})[^0-9]*([0-9]+)[^0-9]*([0-9]+)");
+            return regex.IsMatch(publish_date);
+
+        }
+
+
     }
 }

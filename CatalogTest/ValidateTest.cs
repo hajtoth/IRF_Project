@@ -20,5 +20,20 @@ namespace CatalogTest {
             bool result = BookPropertyValidator.ValidatePrice(price);
             Assert.AreEqual(result, expectedResult);
         }
+
+        [TestCase("2020. 12. 11.", true)]
+        [TestCase("2020.12.11.", true)]
+        [TestCase("20.12.11.", false)]
+        [TestCase("20.dec.11.", false)]
+        [TestCase("2020.", false)]
+        [TestCase("12.11.", false)]
+        [TestCase("12. 11.", false)]
+        public void DateValidateTest(string publish_date, bool expectedResult)
+        {
+            bool result = BookPropertyValidator.ValidateDate(publish_date);
+            Assert.AreEqual(result, expectedResult);
+        }
     }
+
+
 }
