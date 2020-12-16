@@ -13,17 +13,17 @@ namespace project
 {
     public partial class NewBookForm : Form
     {
-        private Book newBook { get; set; }
         public NewBookForm()
         {
             InitializeComponent();
-            newBook = new Book(); 
-            label7.Visible = false;
-            label8.Visible = false;
-            label9.Visible = false;
-            label10.Visible = false;
-            label11.Visible = false;
-            label12.Visible = false; 
+            invalidAuthorLabel.Visible = false;
+            authorSampleLabel.Visible = false;
+            invalidTitleLabel.Visible = false;
+            invaledGenreLabel.Visible = false;
+            invalidPriceLabel.Visible = false;
+            publishDateSampleLabel.Visible = false;
+            invalidPublishDateLabel.Visible = false;
+
         }
 
         private void author_Validating(object sender, CancelEventArgs e)
@@ -35,15 +35,16 @@ namespace project
                 e.Cancel = false;
 
                 if (!String.IsNullOrWhiteSpace(authorTextBox.Text))
-                    authorTextBox.BackColor = Color.LightGreen;
+                    authorTextBox.BackColor = Color.FromArgb(154, 208, 208);
             }
 
             else
             {
                 e.Cancel = true;
-                authorTextBox.BackColor = Color.MediumVioletRed;
+                authorTextBox.BackColor = Color.FromArgb(214, 140, 140);
                 MessageBox.Show("Invalid author.\nSample: Surname, Forename\nRalls, Kim");
-                label7.Visible = true;
+                invalidAuthorLabel.Visible = true;
+                authorSampleLabel.Visible = true;
 
             }
         }
@@ -56,15 +57,15 @@ namespace project
                 e.Cancel = false;
 
                 if (!String.IsNullOrWhiteSpace(titleTextBox.Text))
-                    titleTextBox.BackColor = Color.LightGreen;
+                    titleTextBox.BackColor = Color.FromArgb(154, 208, 208);
             }
 
             else
             {
                 e.Cancel = true;
-                titleTextBox.BackColor = Color.MediumVioletRed;
+                titleTextBox.BackColor = Color.FromArgb(214, 140, 140);
                 MessageBox.Show("Invalid title.\nSample: Midnight Rain");
-                label8.Visible = true;
+                invalidTitleLabel.Visible = true;
 
             }
         }
@@ -78,15 +79,15 @@ namespace project
                 e.Cancel = false;
 
                 if (!String.IsNullOrWhiteSpace(genreTextBox.Text))
-                    genreTextBox.BackColor = Color.LightGreen;
+                    genreTextBox.BackColor = Color.FromArgb(154, 208, 208);
             }
 
             else
             {
                 e.Cancel = true;
-                genreTextBox.BackColor = Color.MediumVioletRed;
+                genreTextBox.BackColor = Color.FromArgb(214, 140, 140);
                 MessageBox.Show("Invalid genre.\nSample: Fantasy");
-                label9.Visible = true;
+                invaledGenreLabel.Visible = true;
 
             }
         }
@@ -100,15 +101,15 @@ namespace project
                 e.Cancel = false;
 
                 if (!String.IsNullOrWhiteSpace(priceTextBox.Text))
-                    priceTextBox.BackColor = Color.LightGreen;
+                    priceTextBox.BackColor = Color.FromArgb(154, 208, 208);
             }
 
             else
             {
                 e.Cancel = true;
-                priceTextBox.BackColor = Color.MediumVioletRed;
+                priceTextBox.BackColor = Color.FromArgb(214, 140, 140);
                 MessageBox.Show("Invalid price.\nSample: 59,95");
-                label10.Visible = true;
+                invalidPriceLabel.Visible = true;
 
             }
         }
@@ -121,46 +122,19 @@ namespace project
                 e.Cancel = false;
 
                 if (!String.IsNullOrWhiteSpace(publishdateTextBox.Text))
-                    publishdateTextBox.BackColor = Color.LightGreen;
+                    publishdateTextBox.BackColor = Color.FromArgb(154, 208, 208);
             }
 
             else
             {
                 e.Cancel = true;
-                publishdateTextBox.BackColor = Color.MediumVioletRed;
-                MessageBox.Show("Invalid publish date.\nSample: 2000. 12. 16.");
-                label11.Visible = true;
+                publishdateTextBox.BackColor = Color.FromArgb(214, 140, 140);
+                MessageBox.Show("Invalid publish date.\nSample: mm/dd/yy e.g. 12/30/2000");
+                invalidPublishDateLabel.Visible = true;
 
             }
         }
-        //private void textBox6_Validating(object sender, CancelEventArgs e)
-        //    {
-        //        Regex regex = new Regex(@"^(?!\s*$).+");
 
-        //        if (regex.IsMatch(textBox6.Text))
-        //        {
-        //            e.Cancel = false;
-
-        //            if (!String.IsNullOrWhiteSpace(textBox6.Text))
-        //                textBox6.BackColor = Color.LightGreen;
-        //        }
-
-        //        else
-        //        {
-        //            e.Cancel = true;
-        //            textBox6.BackColor = Color.MediumVioletRed;
-        //            MessageBox.Show("Invalid description.\nSample: ....");
-        //            label12.Visible = true;
-
-        //        }
-        //    }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        
     }
-    }
+}
 

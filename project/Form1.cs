@@ -22,19 +22,14 @@ namespace project
         {
 
             InitializeComponent();
-            this.BackColor = Color.LimeGreen;
-            this.TransparencyKey = Color.LimeGreen;
-           
-
-            timer1.Start();
+            
+            timer.Start();
 
             System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en-EN"); ;
 
-            label2.Text = DateTime.Now.ToLongDateString();
+            dateLabel.Text = DateTime.Now.ToLongDateString();
 
             dataGridView1.Visible = false;
-            
-
 
             bindingSource1.DataSource = LoadCatalogXml();
             LastBookIdNumber = GetMaxId(bindingSource1.DataSource as List<Book>);
@@ -67,7 +62,7 @@ namespace project
             return readedBooks;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void DisplayButton_Click(object sender, EventArgs e)
         {
             catalog.Visible = false;
             dataGridView1.Visible = true;
@@ -81,7 +76,7 @@ namespace project
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void NewBookButton_Click(object sender, EventArgs e)
         {
             catalog.Visible = false;
 
@@ -105,7 +100,7 @@ namespace project
 
         }
 
-        private void saleButton_Click(object sender, EventArgs e)
+        private void SaleButton_Click(object sender, EventArgs e)
         {
             catalog.Visible = false;
 
@@ -123,7 +118,7 @@ namespace project
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void ExportButton_Click(object sender, EventArgs e)
         {
             catalog.Visible = false;
 
@@ -142,16 +137,16 @@ namespace project
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
 
-            label1.Text = DateTime.Now.ToLongTimeString();
-            timer1.Start();
+            timeLabel.Text = DateTime.Now.ToLongTimeString();
+            timer.Start();
 
 
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void mainPageButton_Click(object sender, EventArgs e)
         {
             dataGridView1.Visible = false;
             catalog.Visible = true;

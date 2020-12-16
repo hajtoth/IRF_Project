@@ -34,246 +34,273 @@
             this.priceTextBox = new System.Windows.Forms.TextBox();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.publishdateTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.authorLabel = new System.Windows.Forms.Label();
+            this.titleLabel = new System.Windows.Forms.Label();
+            this.genreLabel = new System.Windows.Forms.Label();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.publishDateLabel = new System.Windows.Forms.Label();
+            this.descriptionLabel = new System.Windows.Forms.Label();
+            this.invalidAuthorLabel = new System.Windows.Forms.Label();
+            this.invalidTitleLabel = new System.Windows.Forms.Label();
+            this.invaledGenreLabel = new System.Windows.Forms.Label();
+            this.invalidPriceLabel = new System.Windows.Forms.Label();
+            this.invalidPublishDateLabel = new System.Windows.Forms.Label();
+            this.okButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.authorSampleLabel = new System.Windows.Forms.Label();
+            this.requiredLabel = new System.Windows.Forms.Label();
+            this.publishDateSampleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // authorTextBox
             // 
-            this.authorTextBox.Location = new System.Drawing.Point(375, 77);
-            this.authorTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.authorTextBox.Location = new System.Drawing.Point(292, 42);
             this.authorTextBox.Name = "authorTextBox";
-            this.authorTextBox.Size = new System.Drawing.Size(247, 26);
+            this.authorTextBox.Size = new System.Drawing.Size(193, 24);
             this.authorTextBox.TabIndex = 0;
             this.authorTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.author_Validating);
             // 
             // titleTextBox
             // 
-            this.titleTextBox.Location = new System.Drawing.Point(375, 154);
-            this.titleTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.titleTextBox.Location = new System.Drawing.Point(292, 85);
             this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(247, 26);
+            this.titleTextBox.Size = new System.Drawing.Size(193, 24);
             this.titleTextBox.TabIndex = 1;
             this.titleTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.title_Validating);
             // 
             // genreTextBox
             // 
-            this.genreTextBox.Location = new System.Drawing.Point(375, 231);
-            this.genreTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.genreTextBox.Location = new System.Drawing.Point(292, 127);
             this.genreTextBox.Name = "genreTextBox";
-            this.genreTextBox.Size = new System.Drawing.Size(247, 26);
+            this.genreTextBox.Size = new System.Drawing.Size(193, 24);
             this.genreTextBox.TabIndex = 2;
             this.genreTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.genre_Validating);
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(375, 308);
-            this.priceTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.priceTextBox.Location = new System.Drawing.Point(292, 169);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(247, 26);
+            this.priceTextBox.Size = new System.Drawing.Size(193, 24);
             this.priceTextBox.TabIndex = 3;
             this.priceTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.price_Validating);
             // 
             // descriptionTextBox
             // 
-            this.descriptionTextBox.Location = new System.Drawing.Point(375, 462);
-            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.descriptionTextBox.Location = new System.Drawing.Point(292, 254);
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(247, 26);
+            this.descriptionTextBox.Size = new System.Drawing.Size(193, 24);
             this.descriptionTextBox.TabIndex = 5;
             // 
             // publishdateTextBox
             // 
-            this.publishdateTextBox.Location = new System.Drawing.Point(375, 385);
-            this.publishdateTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.publishdateTextBox.Location = new System.Drawing.Point(292, 212);
             this.publishdateTextBox.Name = "publishdateTextBox";
-            this.publishdateTextBox.Size = new System.Drawing.Size(247, 26);
+            this.publishdateTextBox.Size = new System.Drawing.Size(193, 24);
             this.publishdateTextBox.TabIndex = 4;
             this.publishdateTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.publishdate_Validating);
             // 
-            // label1
+            // authorLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(168, 77);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Author";
+            this.authorLabel.AutoSize = true;
+            this.authorLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.authorLabel.Location = new System.Drawing.Point(131, 42);
+            this.authorLabel.Name = "authorLabel";
+            this.authorLabel.Size = new System.Drawing.Size(94, 23);
+            this.authorLabel.TabIndex = 6;
+            this.authorLabel.Text = "Author*";
             // 
-            // label2
+            // titleLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(168, 154);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Title";
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Location = new System.Drawing.Point(131, 85);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(82, 23);
+            this.titleLabel.TabIndex = 7;
+            this.titleLabel.Text = "Title*";
             // 
-            // label3
+            // genreLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(168, 231);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 20);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Genre";
+            this.genreLabel.AutoSize = true;
+            this.genreLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genreLabel.Location = new System.Drawing.Point(131, 127);
+            this.genreLabel.Name = "genreLabel";
+            this.genreLabel.Size = new System.Drawing.Size(82, 23);
+            this.genreLabel.TabIndex = 8;
+            this.genreLabel.Text = "Genre*";
             // 
-            // label4
+            // priceLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(168, 308);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 20);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Price";
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceLabel.Location = new System.Drawing.Point(131, 169);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(82, 23);
+            this.priceLabel.TabIndex = 9;
+            this.priceLabel.Text = "Price*";
             // 
-            // label5
+            // publishDateLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(168, 385);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 20);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Publish date";
+            this.publishDateLabel.AutoSize = true;
+            this.publishDateLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.publishDateLabel.Location = new System.Drawing.Point(131, 212);
+            this.publishDateLabel.Name = "publishDateLabel";
+            this.publishDateLabel.Size = new System.Drawing.Size(166, 23);
+            this.publishDateLabel.TabIndex = 10;
+            this.publishDateLabel.Text = "Publish date*";
             // 
-            // label6
+            // descriptionLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(168, 462);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 20);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Description";
+            this.descriptionLabel.AutoSize = true;
+            this.descriptionLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionLabel.Location = new System.Drawing.Point(131, 254);
+            this.descriptionLabel.Name = "descriptionLabel";
+            this.descriptionLabel.Size = new System.Drawing.Size(142, 23);
+            this.descriptionLabel.TabIndex = 11;
+            this.descriptionLabel.Text = "Description";
             // 
-            // label7
+            // invalidAuthorLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(168, 108);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 20);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "label7";
+            this.invalidAuthorLabel.AutoSize = true;
+            this.invalidAuthorLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invalidAuthorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.invalidAuthorLabel.Location = new System.Drawing.Point(93, 55);
+            this.invalidAuthorLabel.Name = "invalidAuthorLabel";
+            this.invalidAuthorLabel.Size = new System.Drawing.Size(169, 19);
+            this.invalidAuthorLabel.TabIndex = 12;
+            this.invalidAuthorLabel.Text = "Invalid author. ";
             // 
-            // label8
+            // invalidTitleLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(168, 185);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 20);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "label8";
+            this.invalidTitleLabel.AutoSize = true;
+            this.invalidTitleLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invalidTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.invalidTitleLabel.Location = new System.Drawing.Point(93, 102);
+            this.invalidTitleLabel.Name = "invalidTitleLabel";
+            this.invalidTitleLabel.Size = new System.Drawing.Size(369, 19);
+            this.invalidTitleLabel.TabIndex = 13;
+            this.invalidTitleLabel.Text = "Invalid title. Sample: Midnight Rain";
             // 
-            // label9
+            // invaledGenreLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(168, 262);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 20);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "label9";
+            this.invaledGenreLabel.AutoSize = true;
+            this.invaledGenreLabel.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.invaledGenreLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.invaledGenreLabel.Location = new System.Drawing.Point(93, 144);
+            this.invaledGenreLabel.Name = "invaledGenreLabel";
+            this.invaledGenreLabel.Size = new System.Drawing.Size(308, 17);
+            this.invaledGenreLabel.TabIndex = 14;
+            this.invaledGenreLabel.Text = "Invalid genre. Sample: Fantasy";
             // 
-            // label10
+            // invalidPriceLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(168, 338);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(60, 20);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "label10";
+            this.invalidPriceLabel.AutoSize = true;
+            this.invalidPriceLabel.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.invalidPriceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.invalidPriceLabel.Location = new System.Drawing.Point(93, 185);
+            this.invalidPriceLabel.Name = "invalidPriceLabel";
+            this.invalidPriceLabel.Size = new System.Drawing.Size(288, 17);
+            this.invalidPriceLabel.TabIndex = 15;
+            this.invalidPriceLabel.Text = "Invalid price. Sample: 59,95";
             // 
-            // label11
+            // invalidPublishDateLabel
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(168, 415);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 20);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "label11";
+            this.invalidPublishDateLabel.AutoSize = true;
+            this.invalidPublishDateLabel.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.invalidPublishDateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.invalidPublishDateLabel.Location = new System.Drawing.Point(93, 228);
+            this.invalidPublishDateLabel.Name = "invalidPublishDateLabel";
+            this.invalidPublishDateLabel.Size = new System.Drawing.Size(218, 17);
+            this.invalidPublishDateLabel.TabIndex = 16;
+            this.invalidPublishDateLabel.Text = "Invalid publish date.";
             // 
-            // label12
+            // okButton
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(168, 492);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 20);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "label12";
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.okButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.okButton.Location = new System.Drawing.Point(391, 332);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(110, 37);
+            this.okButton.TabIndex = 6;
+            this.okButton.Text = "OK";
+            this.okButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // cancelButton
             // 
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(512, 552);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 35);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cancelButton.Location = new System.Drawing.Point(242, 332);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(110, 37);
+            this.cancelButton.TabIndex = 7;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // authorSampleLabel
             // 
-            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Location = new System.Drawing.Point(375, 552);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 35);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.authorSampleLabel.AutoSize = true;
+            this.authorSampleLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.authorSampleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.authorSampleLabel.Location = new System.Drawing.Point(93, 68);
+            this.authorSampleLabel.Name = "authorSampleLabel";
+            this.authorSampleLabel.Size = new System.Drawing.Size(429, 19);
+            this.authorSampleLabel.TabIndex = 18;
+            this.authorSampleLabel.Text = "Sample: Surname, Forename e. g. Ralls, Kim";
+            // 
+            // requiredLabel
+            // 
+            this.requiredLabel.AutoSize = true;
+            this.requiredLabel.Location = new System.Drawing.Point(292, 23);
+            this.requiredLabel.Name = "requiredLabel";
+            this.requiredLabel.Size = new System.Drawing.Size(188, 17);
+            this.requiredLabel.TabIndex = 19;
+            this.requiredLabel.Text = "* Required field. ";
+            // 
+            // publishDateSampleLabel
+            // 
+            this.publishDateSampleLabel.AutoSize = true;
+            this.publishDateSampleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.publishDateSampleLabel.Location = new System.Drawing.Point(95, 241);
+            this.publishDateSampleLabel.Name = "publishDateSampleLabel";
+            this.publishDateSampleLabel.Size = new System.Drawing.Size(338, 17);
+            this.publishDateSampleLabel.TabIndex = 20;
+            this.publishDateSampleLabel.Text = "Sample: mm/dd/yy, e.g. 12/30/2000";
             // 
             // NewBookForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 692);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.ClientSize = new System.Drawing.Size(577, 381);
+            this.Controls.Add(this.publishDateSampleLabel);
+            this.Controls.Add(this.requiredLabel);
+            this.Controls.Add(this.authorSampleLabel);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.Controls.Add(this.invalidPublishDateLabel);
+            this.Controls.Add(this.invalidPriceLabel);
+            this.Controls.Add(this.invaledGenreLabel);
+            this.Controls.Add(this.invalidTitleLabel);
+            this.Controls.Add(this.invalidAuthorLabel);
+            this.Controls.Add(this.descriptionLabel);
+            this.Controls.Add(this.publishDateLabel);
+            this.Controls.Add(this.priceLabel);
+            this.Controls.Add(this.genreLabel);
+            this.Controls.Add(this.titleLabel);
+            this.Controls.Add(this.authorLabel);
             this.Controls.Add(this.publishdateTextBox);
             this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.priceTextBox);
             this.Controls.Add(this.genreTextBox);
             this.Controls.Add(this.titleTextBox);
             this.Controls.Add(this.authorTextBox);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.MaximizeBox = false;
             this.Name = "NewBookForm";
-            this.Text = "NewBookForm";
+            this.Text = "Add new book";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,19 +313,21 @@
         public System.Windows.Forms.TextBox priceTextBox;
         public System.Windows.Forms.TextBox descriptionTextBox;
         public System.Windows.Forms.TextBox publishdateTextBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label authorLabel;
+        private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.Label genreLabel;
+        private System.Windows.Forms.Label priceLabel;
+        private System.Windows.Forms.Label publishDateLabel;
+        private System.Windows.Forms.Label descriptionLabel;
+        private System.Windows.Forms.Label invalidAuthorLabel;
+        private System.Windows.Forms.Label invalidTitleLabel;
+        private System.Windows.Forms.Label invaledGenreLabel;
+        private System.Windows.Forms.Label invalidPriceLabel;
+        private System.Windows.Forms.Label invalidPublishDateLabel;
+        private System.Windows.Forms.Button okButton;
+        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Label authorSampleLabel;
+        private System.Windows.Forms.Label requiredLabel;
+        private System.Windows.Forms.Label publishDateSampleLabel;
     }
 }

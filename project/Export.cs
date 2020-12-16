@@ -12,15 +12,11 @@ namespace project
         public static void ExportToCsv(string path, List<Book> books)
         {
 
-
             using (StreamWriter sw = new StreamWriter(path, false, Encoding.UTF8))
             {
-                // Végigmegyünk a hallgató lista elemein
+                
                 foreach (var s in books)
                 {
-                    // Egy ciklus iterációban egy sor tartalmát írjuk a fájlba
-                    // A StreamWriter Write metódusa a WriteLine-al szemben nem nyit új sort
-                    // Így darabokból építhetjük fel a csv fájl pontosvesszővel elválasztott sorait
                     sw.Write(s.Author);
                     sw.Write(";");
                     sw.Write(s.Title);
