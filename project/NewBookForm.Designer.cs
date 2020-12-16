@@ -56,7 +56,7 @@
             // 
             this.authorTextBox.Location = new System.Drawing.Point(292, 42);
             this.authorTextBox.Name = "authorTextBox";
-            this.authorTextBox.Size = new System.Drawing.Size(193, 24);
+            this.authorTextBox.Size = new System.Drawing.Size(193, 18);
             this.authorTextBox.TabIndex = 0;
             this.authorTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.author_Validating);
             // 
@@ -64,7 +64,7 @@
             // 
             this.titleTextBox.Location = new System.Drawing.Point(292, 85);
             this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(193, 24);
+            this.titleTextBox.Size = new System.Drawing.Size(193, 18);
             this.titleTextBox.TabIndex = 1;
             this.titleTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.title_Validating);
             // 
@@ -72,7 +72,7 @@
             // 
             this.genreTextBox.Location = new System.Drawing.Point(292, 127);
             this.genreTextBox.Name = "genreTextBox";
-            this.genreTextBox.Size = new System.Drawing.Size(193, 24);
+            this.genreTextBox.Size = new System.Drawing.Size(193, 18);
             this.genreTextBox.TabIndex = 2;
             this.genreTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.genre_Validating);
             // 
@@ -80,7 +80,7 @@
             // 
             this.priceTextBox.Location = new System.Drawing.Point(292, 169);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(193, 24);
+            this.priceTextBox.Size = new System.Drawing.Size(193, 18);
             this.priceTextBox.TabIndex = 3;
             this.priceTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.price_Validating);
             // 
@@ -88,14 +88,14 @@
             // 
             this.descriptionTextBox.Location = new System.Drawing.Point(292, 254);
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(193, 24);
+            this.descriptionTextBox.Size = new System.Drawing.Size(193, 18);
             this.descriptionTextBox.TabIndex = 5;
             // 
             // publishdateTextBox
             // 
             this.publishdateTextBox.Location = new System.Drawing.Point(292, 212);
             this.publishdateTextBox.Name = "publishdateTextBox";
-            this.publishdateTextBox.Size = new System.Drawing.Size(193, 24);
+            this.publishdateTextBox.Size = new System.Drawing.Size(193, 18);
             this.publishdateTextBox.TabIndex = 4;
             this.publishdateTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.publishdate_Validating);
             // 
@@ -105,7 +105,7 @@
             this.authorLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.authorLabel.Location = new System.Drawing.Point(131, 42);
             this.authorLabel.Name = "authorLabel";
-            this.authorLabel.Size = new System.Drawing.Size(94, 23);
+            this.authorLabel.Size = new System.Drawing.Size(63, 15);
             this.authorLabel.TabIndex = 6;
             this.authorLabel.Text = "Author*";
             // 
@@ -115,7 +115,7 @@
             this.titleLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.Location = new System.Drawing.Point(131, 85);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(82, 23);
+            this.titleLabel.Size = new System.Drawing.Size(55, 15);
             this.titleLabel.TabIndex = 7;
             this.titleLabel.Text = "Title*";
             // 
@@ -125,7 +125,7 @@
             this.genreLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genreLabel.Location = new System.Drawing.Point(131, 127);
             this.genreLabel.Name = "genreLabel";
-            this.genreLabel.Size = new System.Drawing.Size(82, 23);
+            this.genreLabel.Size = new System.Drawing.Size(55, 15);
             this.genreLabel.TabIndex = 8;
             this.genreLabel.Text = "Genre*";
             // 
@@ -135,7 +135,7 @@
             this.priceLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceLabel.Location = new System.Drawing.Point(131, 169);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(82, 23);
+            this.priceLabel.Size = new System.Drawing.Size(55, 15);
             this.priceLabel.TabIndex = 9;
             this.priceLabel.Text = "Price*";
             // 
@@ -145,7 +145,7 @@
             this.publishDateLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.publishDateLabel.Location = new System.Drawing.Point(131, 212);
             this.publishDateLabel.Name = "publishDateLabel";
-            this.publishDateLabel.Size = new System.Drawing.Size(166, 23);
+            this.publishDateLabel.Size = new System.Drawing.Size(111, 15);
             this.publishDateLabel.TabIndex = 10;
             this.publishDateLabel.Text = "Publish date*";
             // 
@@ -155,7 +155,7 @@
             this.descriptionLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descriptionLabel.Location = new System.Drawing.Point(131, 254);
             this.descriptionLabel.Name = "descriptionLabel";
-            this.descriptionLabel.Size = new System.Drawing.Size(142, 23);
+            this.descriptionLabel.Size = new System.Drawing.Size(95, 15);
             this.descriptionLabel.TabIndex = 11;
             this.descriptionLabel.Text = "Description";
             // 
@@ -166,7 +166,7 @@
             this.invalidAuthorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.invalidAuthorLabel.Location = new System.Drawing.Point(93, 55);
             this.invalidAuthorLabel.Name = "invalidAuthorLabel";
-            this.invalidAuthorLabel.Size = new System.Drawing.Size(169, 19);
+            this.invalidAuthorLabel.Size = new System.Drawing.Size(119, 14);
             this.invalidAuthorLabel.TabIndex = 12;
             this.invalidAuthorLabel.Text = "Invalid author. ";
             // 
@@ -177,7 +177,7 @@
             this.invalidTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.invalidTitleLabel.Location = new System.Drawing.Point(93, 102);
             this.invalidTitleLabel.Name = "invalidTitleLabel";
-            this.invalidTitleLabel.Size = new System.Drawing.Size(369, 19);
+            this.invalidTitleLabel.Size = new System.Drawing.Size(259, 14);
             this.invalidTitleLabel.TabIndex = 13;
             this.invalidTitleLabel.Text = "Invalid title. Sample: Midnight Rain";
             // 
@@ -188,7 +188,7 @@
             this.invaledGenreLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.invaledGenreLabel.Location = new System.Drawing.Point(93, 144);
             this.invaledGenreLabel.Name = "invaledGenreLabel";
-            this.invaledGenreLabel.Size = new System.Drawing.Size(308, 17);
+            this.invaledGenreLabel.Size = new System.Drawing.Size(215, 11);
             this.invaledGenreLabel.TabIndex = 14;
             this.invaledGenreLabel.Text = "Invalid genre. Sample: Fantasy";
             // 
@@ -199,7 +199,7 @@
             this.invalidPriceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.invalidPriceLabel.Location = new System.Drawing.Point(93, 185);
             this.invalidPriceLabel.Name = "invalidPriceLabel";
-            this.invalidPriceLabel.Size = new System.Drawing.Size(288, 17);
+            this.invalidPriceLabel.Size = new System.Drawing.Size(201, 11);
             this.invalidPriceLabel.TabIndex = 15;
             this.invalidPriceLabel.Text = "Invalid price. Sample: 59,95";
             // 
@@ -210,7 +210,7 @@
             this.invalidPublishDateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.invalidPublishDateLabel.Location = new System.Drawing.Point(93, 228);
             this.invalidPublishDateLabel.Name = "invalidPublishDateLabel";
-            this.invalidPublishDateLabel.Size = new System.Drawing.Size(218, 17);
+            this.invalidPublishDateLabel.Size = new System.Drawing.Size(152, 11);
             this.invalidPublishDateLabel.TabIndex = 16;
             this.invalidPublishDateLabel.Text = "Invalid publish date.";
             // 
@@ -245,7 +245,7 @@
             this.authorSampleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.authorSampleLabel.Location = new System.Drawing.Point(93, 68);
             this.authorSampleLabel.Name = "authorSampleLabel";
-            this.authorSampleLabel.Size = new System.Drawing.Size(429, 19);
+            this.authorSampleLabel.Size = new System.Drawing.Size(301, 14);
             this.authorSampleLabel.TabIndex = 18;
             this.authorSampleLabel.Text = "Sample: Surname, Forename e. g. Ralls, Kim";
             // 
@@ -254,7 +254,7 @@
             this.requiredLabel.AutoSize = true;
             this.requiredLabel.Location = new System.Drawing.Point(292, 23);
             this.requiredLabel.Name = "requiredLabel";
-            this.requiredLabel.Size = new System.Drawing.Size(188, 17);
+            this.requiredLabel.Size = new System.Drawing.Size(131, 11);
             this.requiredLabel.TabIndex = 19;
             this.requiredLabel.Text = "* Required field. ";
             // 
@@ -264,13 +264,13 @@
             this.publishDateSampleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.publishDateSampleLabel.Location = new System.Drawing.Point(95, 241);
             this.publishDateSampleLabel.Name = "publishDateSampleLabel";
-            this.publishDateSampleLabel.Size = new System.Drawing.Size(338, 17);
+            this.publishDateSampleLabel.Size = new System.Drawing.Size(236, 11);
             this.publishDateSampleLabel.TabIndex = 20;
             this.publishDateSampleLabel.Text = "Sample: mm/dd/yy, e.g. 12/30/2000";
             // 
             // NewBookForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 11F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.ClientSize = new System.Drawing.Size(577, 381);
@@ -300,6 +300,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.MaximizeBox = false;
             this.Name = "NewBookForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add new book";
             this.ResumeLayout(false);
             this.PerformLayout();

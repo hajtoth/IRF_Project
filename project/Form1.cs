@@ -35,7 +35,6 @@ namespace project
             LastBookIdNumber = GetMaxId(bindingSource1.DataSource as List<Book>);
             dataGridView1.DataSource = bindingSource1;
             dataGridView1.Refresh();
-
         }
 
         private int GetMaxId(List<Book> books)
@@ -111,7 +110,6 @@ namespace project
                 int saleCode = rng.Next(0, 10);
                 double newPrice = PriceCalculator.CalculateSalePrice(book.Price, saleCode);
                 book.Price = newPrice;
-
             }
 
             dataGridView1.Refresh();
@@ -124,16 +122,14 @@ namespace project
 
             SaveFileDialog sfd = new SaveFileDialog();
 
-            sfd.InitialDirectory = Application.StartupPath; // Alapértelmezetten az exe fájlunk mappája fog megnyílni a dialógus ablakban
-            sfd.Filter = "Comma Seperated Values (*.csv)|*.csv"; // A kiválasztható fájlformátumokat adjuk meg ezzel a sorral. Jelen esetben csak a csv-t fogadjuk el
-            sfd.DefaultExt = "csv"; // A csv lesz az alapértelmezetten kiválasztott kiterjesztés
-            sfd.AddExtension = true; // Ha ez igaz, akkor hozzáírja a megadott fájlnévhez a kiválasztott kiterjesztést, de érzékeli, ha a felhasználó azt is beírta és nem fogja duplán hozzáírni
+            sfd.InitialDirectory = Application.StartupPath;
+            sfd.Filter = "Comma Seperated Values (*.csv)|*.csv"; 
+            sfd.DefaultExt = "csv"; 
+            sfd.AddExtension = true; 
 
             if (sfd.ShowDialog() != DialogResult.OK) return;
 
             Export.ExportToCsv(sfd.FileName, bindingSource1.DataSource as List<Book>);
-
-
 
         }
 
@@ -142,8 +138,6 @@ namespace project
 
             timeLabel.Text = DateTime.Now.ToLongTimeString();
             timer.Start();
-
-
         }
 
         private void mainPageButton_Click(object sender, EventArgs e)

@@ -52,10 +52,9 @@
             this.displayBookButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.displayBookButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayBookButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.displayBookButton.Location = new System.Drawing.Point(27, 224);
-            this.displayBookButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.displayBookButton.Location = new System.Drawing.Point(18, 146);
             this.displayBookButton.Name = "displayBookButton";
-            this.displayBookButton.Size = new System.Drawing.Size(153, 77);
+            this.displayBookButton.Size = new System.Drawing.Size(102, 50);
             this.displayBookButton.TabIndex = 4;
             this.displayBookButton.Text = "Display books";
             this.displayBookButton.UseVisualStyleBackColor = false;
@@ -67,10 +66,9 @@
             this.newBookButton.Enabled = false;
             this.newBookButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newBookButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.newBookButton.Location = new System.Drawing.Point(27, 311);
-            this.newBookButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.newBookButton.Location = new System.Drawing.Point(18, 202);
             this.newBookButton.Name = "newBookButton";
-            this.newBookButton.Size = new System.Drawing.Size(153, 77);
+            this.newBookButton.Size = new System.Drawing.Size(102, 50);
             this.newBookButton.TabIndex = 5;
             this.newBookButton.Text = "New book";
             this.newBookButton.UseVisualStyleBackColor = false;
@@ -82,10 +80,9 @@
             this.saleButton.Enabled = false;
             this.saleButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saleButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.saleButton.Location = new System.Drawing.Point(27, 398);
-            this.saleButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.saleButton.Location = new System.Drawing.Point(18, 259);
             this.saleButton.Name = "saleButton";
-            this.saleButton.Size = new System.Drawing.Size(153, 77);
+            this.saleButton.Size = new System.Drawing.Size(102, 50);
             this.saleButton.TabIndex = 6;
             this.saleButton.Text = "Sale";
             this.saleButton.UseVisualStyleBackColor = false;
@@ -97,10 +94,9 @@
             this.exportButton.Enabled = false;
             this.exportButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exportButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.exportButton.Location = new System.Drawing.Point(27, 485);
-            this.exportButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.exportButton.Location = new System.Drawing.Point(18, 315);
             this.exportButton.Name = "exportButton";
-            this.exportButton.Size = new System.Drawing.Size(153, 77);
+            this.exportButton.Size = new System.Drawing.Size(102, 50);
             this.exportButton.TabIndex = 7;
             this.exportButton.Text = "Export";
             this.exportButton.UseVisualStyleBackColor = false;
@@ -111,11 +107,10 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(225, 65);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(150, 42);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1182, 497);
+            this.dataGridView1.Size = new System.Drawing.Size(788, 323);
             this.dataGridView1.TabIndex = 8;
             // 
             // timeLabel
@@ -124,10 +119,9 @@
             this.timeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.timeLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.timeLabel.Location = new System.Drawing.Point(1112, 21);
-            this.timeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.timeLabel.Location = new System.Drawing.Point(778, 14);
             this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(82, 23);
+            this.timeLabel.Size = new System.Drawing.Size(55, 15);
             this.timeLabel.TabIndex = 9;
             this.timeLabel.Text = "label1";
             // 
@@ -142,10 +136,9 @@
             this.dateLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dateLabel.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dateLabel.Location = new System.Drawing.Point(785, 21);
-            this.dateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dateLabel.Location = new System.Drawing.Point(523, 14);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(82, 23);
+            this.dateLabel.Size = new System.Drawing.Size(55, 15);
             this.dateLabel.TabIndex = 10;
             this.dateLabel.Text = "label2";
             // 
@@ -155,10 +148,9 @@
             this.catalog.BackColor = System.Drawing.Color.Transparent;
             this.catalog.Font = new System.Drawing.Font("Lucida Sans Typewriter", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.catalog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.catalog.Location = new System.Drawing.Point(714, 376);
-            this.catalog.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.catalog.Location = new System.Drawing.Point(476, 244);
             this.catalog.Name = "catalog";
-            this.catalog.Size = new System.Drawing.Size(679, 164);
+            this.catalog.Size = new System.Drawing.Size(453, 109);
             this.catalog.TabIndex = 11;
             this.catalog.Text = "Catalog";
             // 
@@ -167,10 +159,9 @@
             this.mainPageButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.mainPageButton.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainPageButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.mainPageButton.Location = new System.Drawing.Point(27, 65);
-            this.mainPageButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mainPageButton.Location = new System.Drawing.Point(18, 42);
             this.mainPageButton.Name = "mainPageButton";
-            this.mainPageButton.Size = new System.Drawing.Size(153, 77);
+            this.mainPageButton.Size = new System.Drawing.Size(102, 50);
             this.mainPageButton.TabIndex = 3;
             this.mainPageButton.Text = "Main page";
             this.mainPageButton.UseVisualStyleBackColor = false;
@@ -178,11 +169,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1565, 771);
+            this.ClientSize = new System.Drawing.Size(1043, 501);
             this.Controls.Add(this.mainPageButton);
             this.Controls.Add(this.catalog);
             this.Controls.Add(this.dateLabel);
@@ -192,7 +183,6 @@
             this.Controls.Add(this.saleButton);
             this.Controls.Add(this.newBookButton);
             this.Controls.Add(this.displayBookButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -11,10 +11,8 @@ namespace project
     {
         public static void ExportToCsv(string path, List<Book> books)
         {
-
             using (StreamWriter sw = new StreamWriter(path, false, Encoding.UTF8))
             {
-                
                 foreach (var s in books)
                 {
                     sw.Write(s.Author);

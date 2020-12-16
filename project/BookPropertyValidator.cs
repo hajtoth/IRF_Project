@@ -22,6 +22,23 @@ namespace project
             return regex.IsMatch(publish_date);
 
         }
+        public static bool ValidateAuthor(string author)
+        {
+            Regex regex = new Regex(@"^(?!\s*$).+");
+            return regex.IsMatch(author);
+        }
+
+        public static bool ValidateTitle(string title)
+        {
+            Regex regex = new Regex(@"^(?!\s*$).+");
+            return regex.IsMatch(title);
+        }
+
+        public static bool ValidateGenre(string genre)
+        {
+            Regex regex = new Regex(@"^(?!\s*$).+");
+            return regex.IsMatch(genre);
+        }
 
 
     }

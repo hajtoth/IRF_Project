@@ -30,10 +30,14 @@ namespace CatalogTest
             };
             string filename = "test.csv";
 
-            Export.ExportToCsv(filename, books);
-
-            Assert.IsTrue(File.Exists(filename));
-            File.Delete(filename);
+            try
+            {
+                Export.ExportToCsv(filename, books);
+            }
+            finally{
+                Assert.IsTrue(File.Exists(filename));
+                File.Delete(filename);
+            }
         }
     }
 }

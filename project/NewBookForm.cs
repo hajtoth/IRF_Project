@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace project
 {
@@ -28,9 +29,7 @@ namespace project
 
         private void author_Validating(object sender, CancelEventArgs e)
         {
-            Regex regex = new Regex(@"^(?!\s*$).+");
-
-            if (regex.IsMatch(authorTextBox.Text))
+            if (BookPropertyValidator.ValidateAuthor(authorTextBox.Text))
             {
                 e.Cancel = false;
 
@@ -50,9 +49,8 @@ namespace project
         }
         private void title_Validating(object sender, CancelEventArgs e)
         {
-            Regex regex = new Regex(@"^(?!\s*$).+");
-
-            if (regex.IsMatch(titleTextBox.Text))
+         
+            if (BookPropertyValidator.ValidateAuthor(titleTextBox.Text))
             {
                 e.Cancel = false;
 
@@ -72,9 +70,8 @@ namespace project
 
         private void genre_Validating(object sender, CancelEventArgs e)
         {
-            Regex regex = new Regex(@"^(?!\s*$).+");
-
-            if (regex.IsMatch(genreTextBox.Text))
+          
+            if (BookPropertyValidator.ValidateAuthor(genreTextBox.Text))
             {
                 e.Cancel = false;
 
